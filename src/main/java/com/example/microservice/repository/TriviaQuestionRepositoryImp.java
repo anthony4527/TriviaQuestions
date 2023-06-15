@@ -41,6 +41,11 @@ public class TriviaQuestionRepositoryImp implements TriviaQuestionRepository{
                 "Which country lies on the border between Spain and France?",
                 "Andorra","Luxemborg","England","Portugal",
                 "A","Go with your first guess",(new Date()) )));
+
+        this.triviaQuestionList.add((new TriviaQuestion(5,
+                "CERN launched the very first website in what year?",
+                "1985","1968","1990","1995",
+                "C","Not before Star Wars",(new Date()) )));
 /*
         questionList.add((new TriviaQuestionBuilder())
                 .id(5)
