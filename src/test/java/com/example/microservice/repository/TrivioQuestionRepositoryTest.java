@@ -38,13 +38,13 @@ public class TrivioQuestionRepositoryTest {
         assertEquals( "The martial art of kung fu originated in which country?", thirdQuestion);
 
         List<TriviaQuestion> lisQ3 =trRepos.getListOfQuestions(2,2);
-        assertEquals(1, lisQ3.size());
+        assertEquals(2, lisQ3.size());
 
     }
 
     @Test
     public void getTotalTest(){
         trRepos = new TriviaQuestionRepositoryImp();
-        assertEquals( 5, trRepos.getTotNumOfQuestion());
+        assertEquals( 6, trRepos.getTotNumOfQuestion());
     }
 }
