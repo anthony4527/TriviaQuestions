@@ -59,5 +59,6 @@ public class TriviaQuestionController {
         List<TriviaQuestion> range = triviaQuestionService.getPageofQuestions( PAGE_SIZE, Integer.parseInt(offset));
         return new ResponseEntity<> (range, HttpStatus.OK);
     }
+//http://localhost:8080/swagger-ui/index.html#/trivia-question-controller
 
 }
