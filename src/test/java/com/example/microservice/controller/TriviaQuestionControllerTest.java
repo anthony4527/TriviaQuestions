@@ -49,7 +49,7 @@ public class TriviaQuestionControllerTest {
                         "C","The altitude of Denver, Colorado",(new Date()))));
 
         MockHttpServletRequestBuilder requestBuilder = MockMvcRequestBuilders.get("/api/v1/trivia/questions?" + "id=0");
-        ///api/v1/trivia/questions?id=0
+
         this.mockMvc.perform(requestBuilder).andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(0))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.question").value("How many feet are in one mile?"))
