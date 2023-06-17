@@ -44,7 +44,6 @@ public class TriviaQuestionServiceTest {
                 "5260","5270","5280","5290",
                 "C","The altitude of Denver, Colorado",(new Date())))
                             );
-
         String questionString = trSvc.getQuestionById(0L).get().getQuestion();
         assertEquals( "How many feet are in one mile?", questionString);
     }
