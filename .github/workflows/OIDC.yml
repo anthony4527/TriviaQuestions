@@ -41,6 +41,7 @@ jobs:
   build-images:
     name: Package distribution file
     runs-on: ubuntu-latest
+    needs: build
 
     steps:
     - name: Checkout repo
