@@ -1,9 +1,6 @@
 FROM openjdk:17
 
-RUN mkdir /app
-
-COPY docker-trivia.jar /app/docker-trivia.jar
-WORKDIR /app
 EXPOSE 8080
+ADD target/docker-trivia.jar docker-trivia.jar
 
 ENTRYPOINT ["java","-jar","docker-trivia.jar"]
